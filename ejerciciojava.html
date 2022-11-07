@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio java</title>
+    <script src="scriptito.js"></script>
+</head>
+<body>
+    <form>
+
+        <fieldset>
+            <legend>1.Ingrese sus grados en Celsius pa convertir a Farenheit</legend>
+
+                <label for="GradosCelsius">Grados Celsius:</label>
+                <input type="text" value="" id="GC" name="GC">
+                <br>
+            </fieldset>
+            <input type="button" value="Confirme su conversion por 5 pesitos:" name="obtC" onclick="convertirGradosCentigradosAGradosFahrenheint(
+                parseFloat(document.getElementById('GC').value))">
+                </form>
+                <br>
+                <h3>El resultado de la conversion es:</h3>
+                <br>
+                <span id="resultado"></span> 
+                <br>
+                <p1> Que tenga un buen dia</p1>
+                <br>
+                <br>
+
+               
+         <form>
+
+             <fieldset>
+             <legend>2.Ingrese su numerito para hacer el calculo</legend>
+            
+                            <label for="N">Numerito:</label>
+                            <input type="text" value="" id="N" name="N">
+                            <br>
+                        </fieldset>
+                        <input type="button" value="Confirme su gran calculo:" name="obtP" onclick="calcularporcentajes(
+                            parseFloat(document.getElementById('N').value))">
+                            </form>
+                            <br>
+                            <h3>El resultado del calculo es</h3>
+                            <br>
+                            <span id="porcentaje"></span> 
+                            <br>
+                            <p1> Que tenga un buen dia otra vez</p1>
+<br>
+<br>
+<form>
+
+    <fieldset>
+    <legend>3.Ingrese su numerito de filas y columnas   </legend>
+   
+                   <label for="TF">Numero de filas:</label>
+                   <input type="text" value="" id="TF" name="TF">
+                   <br>
+                   <label for="TC">Numero de columnas:</label>
+                   <input type="text" value="" id="TC" name="TC">
+                   <br>
+               </fieldset>
+               <input type="button" value="Crear tabla en la pagina" name="obtP" onclick="obtenertabla(
+                   parseInt(document.getElementById('TF').value),
+                   parseInt(document.getElementById('TC').value)
+                   )">
+                   </form>
+                   <br>
+                   <span id="tabla"></span> 
+
+<br>
+
+</body>
+</html>
